@@ -1,0 +1,1647 @@
+/*
+Theme Name: Popcorn	
+Theme URI: http://www.convax.com
+Author: Convax Solutions
+Author URI: http://www.convax.com/
+Description: The popcorn theme was specifically designed for the Mozilla Foundation
+Version: 1.0
+Tags: dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, flexible-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+*/
+/*---Reset---*/html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block
+}
+a {
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+	text-decoration:none;
+	outline:none;
+	color:#47768b;
+	-webkit-transition: color 0.7s linear;
+	-moz-transition: color 0.7s linear;
+	-o-transition: color 0.7s linear;
+	transition: color 0.7s linear;
+}
+a:hover {
+	color:#76AEC8
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+input, select {
+	vertical-align:middle
+}
+select, input, textarea, button {
+	font:99% sans-serif
+}
+pre, code, kbd, samp {
+	font-family:monospace, sans-serif
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:400;
+	color:#444
+}
+a:hover, a:active {
+	outline:none
+}
+ul, ol {
+	list-style:none;
+	list-style-type:none
+}
+strong, th {
+	font-weight:700
+}
+td, td img {
+	vertical-align:top;
+	border:none
+}
+pre {
+	padding:15px;
+	white-space:pre;
+	white-space:pre-wrap;
+	white-space:pre-line;
+}
+textarea {
+	overflow:auto;
+	resize:none
+}
+input[type="radio"] {
+	vertical-align:text-bottom
+}
+input[type="checkbox"] {
+	vertical-align:bottom
+}
+input[type=button], input[type=submit], button {
+	cursor:pointer;
+	border:none;
+	outline:none
+}
+input[type="text"]:focus, textarea:focus, input:focus {
+	outline:none
+}
+label {
+	cursor:text
+}
+button, input, select, textarea {
+	margin:0
+}
+::-moz-selection, ::selection {
+background:#9c3b00;
+color:#fff;
+text-shadow:none
+}
+button {
+	width:auto;
+	overflow:visible
+}
+br {
+	display:none
+}
+/*---@font-face---*/
+@font-face {
+	font-family:"Colaborate-Bold";
+	src:url("../popcornWP/fonts/ColabBol.eot?") format("eot"), url("../popcornWP/fonts/ColabBol.woff") format("woff"), url("../popcornWP/fonts/ColabBol.ttf") format("truetype"), url("../popcornWP/fonts/ColabBol.svg#Colaborate-Bold") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"bebas";
+	src:url("../popcornWP/fonts/BebasNeue-webfont.eot?") format("eot"), url("../popcornWP/fonts/BebasNeue-webfont.woff") format("woff"), url("../popcornWP/fonts/BebasNeue-webfont.ttf") format("truetype"), url("../popcornWP/fonts/BebasNeue-webfont.svg#BebasNeue-webfont") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:"Colaborate-Regular";
+	src:url("../popcornWP/fonts/ColabReg.eot?") format("eot"), url("../popcornWP/fonts/ColabReg.woff") format("woff"), url("../popcornWP/fonts/ColabReg.ttf") format("truetype"), url("../popcornWP/fonts/ColabReg.svg#Colaborate-Regular") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+/*---sprite---*/
+/*---Main---*/
+body {
+	background:url(../popcornWP/images/body_bg.jpg) repeat-x #f6f0dc
+}
+body, p {
+	font:14px/1.231 Georgia, "Times New Roman", Times, serif;
+	color:#444
+}
+.wrapper {
+	width:100%;
+	display: table;
+	clear: both;
+	margin: 0;
+}
+.active {
+	width:150%;
+	height:150%;
+}
+.block {
+	position:relative;
+	width:940px;
+	margin:0 auto
+}
+h1 {
+	font-family:Colaborate-Bold, Helvetica, Arial, sans-serif;
+	letter-spacing:-2px;
+	font-size:30px;
+	margin-bottom:10px;
+}
+.follow-popcorn .follow-btns li a, .logo a, .launch-audio-btn {
+	display:block;
+	overflow:hidden;
+	text-indent:-9999px
+}
+.no-border {
+	border:none !important
+}
+.lowerDiv a, .for3_text_link, .find-out-more, .question-div a, #primary .hentry a, .slidein a {
+	color:#cc6600;
+	-webkit-transition: color 0.7s linear;
+	-moz-transition: color 0.7s linear;
+	-o-transition: color 0.7s linear;
+	transition: color 0.7s linear;
+}
+.lowerDiv a:hover, .for3_text_link:hover, .find-out-more:hover, .question-div a:hover, #primary .hentry a:hover, .slidein a:hover {
+	color:#cc9900
+}
+/*---Header---*/
+#header {
+	height:47px;
+	padding-top:3px
+}
+.logo {
+	float:left;
+	width:246px;
+	height:69px;
+	padding-top: 3px;
+}
+.logo a {
+	background:url(../popcornWP/images/logo_popcorn.png) 0 0 no-repeat;
+	height:100%
+}
+.mozilla-tab {
+	position:absolute;
+	z-index:999;
+	right:0;
+	top:2px;
+	width:118px;
+	height:47px;
+	background:url(../popcornWP/images/mozilla_.png) 0 0 no-repeat
+}
+nav.mainNav {
+	float:right
+}
+nav ul {
+	overflow:hidden;
+	width:501px;
+	margin-right:120px
+}
+nav li {
+	border-left:1px solid #cdba73;
+	float:left;
+	display:block
+}
+nav li a {
+	display:block;
+	text-align:center;
+	padding:9px 10px 0;
+	line-height:43px;
+	color:#555;
+	font: normal 13px/33px 'Trebuchet MS', Geneva, Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-weight:bold;
+	background-image: linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250, 242, 217, 0) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250, 242, 217, 0) 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250, 242, 217, 0) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250, 242, 217, 0) 100%);
+	background-image: -ms-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250, 242, 217, 0) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255,255,255,0)), color-stop(1, rgb(250, 242, 217, 0)));
+	transition: all 1s linear;
+	-o-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+}
+nav li a:hover, nav li a:active, nav li a:focus, nav li.active a {
+	color:#000;
+	background-image: linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
+	background-image: -o-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
+	background-image: -moz-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
+	background-image: -ms-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgb(250,242,217) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(255,255,255,0)), color-stop(1, rgb(250,242,217)));
+}
+
+/*STORYCAMP*/
+.row {
+  margin-left: -20px;
+  *zoom: 1;
+	margin-top:20px;
+}
+
+#storycamp{
+margin:0px auto;	
+}
+
+.storycamp .active {
+	height:auto;
+	width:auto;
+}
+
+.storycamp .SC_cinema_left .active img{
+ -webkit-box-shadow:  2px 10px 15px 4px #000000;
+		 -moz-box-shadow:  2px 10px 15px 4px #000000;
+        box-shadow:  2px 10px 15px 4px #000000;
+}
+
+.resources{
+	width:300px;
+}
+
+.modal-body img{
+float:right;
+padding:5px;	
+}
+
+.storycamp .SC_cinema_left .modal-body p{
+width:515px;
+margin-top:0px;
+}
+
+.modal-body h2, .modal-body h3, .modal-body h4{
+	font-family:Open Sans, Helvetica, Arial, sans-serif;
+	font-size:24px;
+	color:#81C253;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+.modal-body h3{
+font-size:20px;	
+border-bottom:1px solid #81C253;
+}
+.modal-body h4{
+font-size:14px;	
+color:#444444;
+}
+
+.SC_cinema_left .modal-body ul, .SC_cinema_left .modal-body ol{
+background-color:white;	
+margin-left:40px;
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:14px;
+}
+
+.SC_cinema .modal-header h2{
+margin-bottom:0px;	
+}
+
+.modal-body ul li{
+	list-style:circle;	
+	margin-bottom:5px;
+}
+
+.storycamp p{
+margin:20px 0px 20px 0px;	
+}
+
+.tab-content SC_cinema_right p{
+width:640px;	
+}
+
+.storycamp h5{
+padding:5px;
+}
+
+.span_SC_header h2{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+font-style:italic;	
+}
+
+.SC_cinema{
+height:100%;	
+}
+
+.SC_cinema h2{
+	font-family:Colaborate-Bold, Helvetica, Arial, sans-serif;
+	letter-spacing:-2px;
+	font-size:24px;
+	margin-bottom:20px;
+	margin-top:20px;
+	text-transform:uppercase;
+}
+
+.span_SC_header {
+  width: 45%;
+  
+}
+.span_SC_header img{
+margin-left:20px;	
+}
+.SC_nav {
+  width: 45%;
+  margin-right:2px;
+  background-color:white;
+  padding:20px;
+  float:left;
+  height:100px;
+}
+.SC_nav img{
+float:left;	
+padding-right:15px;
+}
+.SC_nav .nav_text{
+	margin-top:10px;
+}
+
+
+.SC_cinema_left {
+  width: 30%;
+}
+
+.SC_cinema_left h1{
+font-family:Open Sans, Arial, Helvetica, sans-serif;
+font-size:14px;	
+font-weight:bold;
+letter-spacing:2px;
+  color:white;
+  letter-spacing: 0.025em;
+  margin:0px
+}
+.navList{
+ height:600px;
+  overflow-y:scroll;
+    background-color:#444444;
+  background-image:url(../img/chapter_bgtile.png);
+  margin-bottom:40px;
+}
+.navList li{
+padding:25px 0px 0px 34px;	
+}
+
+.tab-content{
+	height:100%
+}
+
+.SC_cinema_right {
+  left: 290px;
+    position: absolute;
+    top: 393px;
+}
+.SC_cinema_right ul li{
+float:left;
+width:190px;	
+}
+/*Storycamp buttons*/
+.btn-resource{
+width:260px;
+text-align:left;	
+}
+
+.btn-resource:hover{
+background-color:#81C253;	
+}
+
+/*/Storycamp Buttons*/
+
+#myModal{
+	clear:both;	
+}
+
+/*end storycamp*/
+/*---what-is-popcorn---*/
+.what-is-popcornDiv {
+	margin-top:40px;
+	border-bottom:2px solid #e8e7d4;
+	background: url(../popcornWP/images/popcorn_texture_bg.png) no-repeat bottom center;
+	overflow: hidden;
+}
+#what-is-popcorn {
+	padding:20px 0 0 0;
+	height:290px;
+}
+.home-video-div {
+	float:left;
+	width:286px;
+	height:200px
+}
+.home-video-text {
+	float:left;
+	padding:30px 0 0 0;
+	text-align:left;
+	width:500px;
+	position:relative
+}
+h1.main-title {
+	font-size:70px;
+	line-height:60px;
+	letter-spacing:-7px;
+	text-transform:uppercase
+}
+h1.main-title span {
+	font:italic 50px/53px Georgia, "Times New Roman", Times, serif;
+	letter-spacing:-3px;
+	text-transform:lowercase;
+	display:block
+}
+.home-slider p {
+	font:italic 18px/18px Georgia, "Times New Roman", Times, serif;
+	padding:12px 0;
+}
+.play-video br {
+	display:block
+}
+.launch_audio {
+	position: absolute;
+	right:-384px;
+	top:60px;
+	z-index: 9999;
+	text-align:center;
+	font-style:italic;
+	font-size:18px;
+	color:#d1ba9b;
+	width:80px;
+	height:80px
+}
+.launch_audio .launch-audio-text {
+	position:absolute;
+	z-index:1;
+	width:74px;
+	height:86px;
+	right:-8px;
+	top:-8px;
+	background:url(../popcornWP/images/launch_audio_.png) 0 0 no-repeat;
+	padding:38px 340px 0 30px;
+	color:#f1f1f1
+}
+.launch-audio-btn {
+	width:80px;
+	height:80px;
+	margin:12px 0;
+	background:url(../popcornWP/images/launch-audio-btn.png) 0 0 no-repeat;
+	position:absolute;
+	z-index:999;
+	right:0;
+	top:0
+}
+.launch-audio-btn:hover {
+	background-position: 0 -90px
+}
+.launch-audio-btn:active, .launch-audio-btn:focus {
+	background-position: 0 -179px
+}
+/*---for3---*/
+.for3Div {
+	margin:40px 0
+}
+#for3 ul {
+	overflow:hidden
+}
+#for3 ul li {
+	width:273px;
+	float:left;
+	text-align:center;
+	padding:0 20px;
+	background:url(../popcornWP/images/dotted_border.png) right center repeat-y;
+	display:block
+}
+#for3 ul li:last-child, #for3 ul li.last {
+	float:right
+}
+#for3 ul li p {
+	padding:10px 0
+}
+#for3 ul li h2 {
+	font:italic 24px/24px Georgia, "Times New Roman", Times, serif;
+	color:#333
+}
+#for3 ul li .box-content h3, #for3 ul li .box-content h3 a {
+	font-size:32px;
+	letter-spacing:-2px;
+	font-family: Colaborate-Bold, Helvetica, Arial, sans-serif
+}
+#for3 ul li .box-content {
+	min-height: 73px;
+}
+#for3 ul li .for3_link img {
+	display: block;
+	margin: 0px auto 8px;
+	text-align: center;
+}
+#for3 ul li .for3_text_link {
+	font: normal 16px/20px Georgia, "Times New Roman", Times, serif
+}
+.lowerDiv {
+	background:#212426;
+	overflow:hidden;
+	padding:40px 0
+}
+.lower-content {
+	overflow:hidden;
+	text-align:left;
+}
+.lower-content section {
+	float:left;
+	width:313px;
+	position:relative
+}
+.lower-content section.news {
+	float: right;
+}
+.lower-content .subscription .row {
+	bottom:0;
+	position:absolute;
+	left:118px;
+	width:125px;
+	z-index: 999
+}
+.lower-content .subscription .row input {
+	float: left;
+	margin:0 10px 22px 0
+}
+.lowerDiv {
+	color:#ccc
+}
+.lowerDiv h2 {
+	font: normal 22px/24px Colaborate-Bold, Helvetica, Arial, sans-serif;
+	color:#999;
+	padding:50px 0 30px 0;
+	text-align:left;
+	text-transform:uppercase;
+	letter-spacing:-1px;
+	width:250px
+}
+.lowerDiv section h2 {
+	background:url(../popcornWP/images/lower_icons.png) 0 0 no-repeat
+}
+.lowerDiv .subscription h2 {
+	background-position: 0 -297px
+}
+.lowerDiv .tweets h2 {
+	background-position: 0 0
+}
+.lowerDiv .news h2 {
+	background-position: 0 -151px
+}
+.lower-content ul {
+	width:280px
+}
+.lower-content ul.news-list li {
+	padding-top:10px;
+	border-bottom:1px solid #333
+}
+.lower-content ul.news-list li:first-child {
+	padding:0
+}
+.lower-content ul.news-list li:last-child {
+	border:0
+}
+.lower-content ul.news-list li a {
+	font:italic 14px Georgia, "Times New Roman", Times, serif;
+	padding-bottom:10px;
+	display:block
+}
+.lower-content #tweet li {
+	display:block;
+	padding-bottom:20px;
+	font-style:italic
+}
+.lower-content #tweet li a {
+	line-height:18px
+}
+.lower-content .news .read-more {
+	margin:20px 40px 20px 0
+}
+.read-more {
+	font:italic 14px Georgia, "Times New Roman", Times, serif;
+	float:right;
+	letter-spacing:-1px
+}
+.update-me-input {
+	width:220px;
+	height:36px;
+	line-height:36px;
+	padding:0 10px;
+	border-color:#000 !important
+}
+.update-me-btn {
+	height:42px;
+	font-size:13px;
+	float:left;
+	padding:0 10px 3px;
+	margin-top:10px
+}
+.update-me-btn.btn {
+	border-color:#000 !important;
+}
+.update-me-btn:active, .update-me-btn:focus {
+	background-image:none;
+	-moz-box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-webkit-box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-o-box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70
+}*/
+/*---Footer Div---*/
+.footerDiv {
+	background:#000;
+}
+.footer-list {
+	padding:30px 0 90px
+}
+.footer-list li:last-child {
+	border:none
+}
+.footer-list li {
+	float:left;
+	padding-right:10px;
+	border-right:1px solid #333;
+	margin-right:10px
+}
+.footer-list li a {
+	display:block;
+	font-style:italic
+}
+.footer-list li a:hover {
+	color:#76aec8
+}
+.footer-list li.last {
+	border:none
+}
+.twitter-follow-button {
+	font-size:18px
+}
+#commentform p.form-submit #submit, #build-library-btn {
+	border:3px solid #deddda !important;
+	color:#fff;
+	background-color:#f87c00;
+	-moz-box-shadow:inset 0 -3px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-webkit-box-shadow:inset 0 -3px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-o-box-shadow:inset 0 -3px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	box-shadow:inset 0 -3px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-moz-text-shadow: 0 1px 0 #9c4e00;
+	-webkit-text-shadow: 0 1px 0 #9c4e00;
+	-o-text-shadow: 0 1px 0 #9c4e00;
+	text-shadow: 0 1px 0 #9c4e00;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+	background-image: linear-gradient(bottom, rgb(225,113,0) 0%, rgb(255,128,0) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(225,113,0) 0%, rgb(255,128,0) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(225,113,0) 0%, rgb(255,128,0) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(225,113,0) 0%, rgb(255,128,0) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(225,113,0) 0%, rgb(255,128,0) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(225,113,0)), color-stop(1, rgb(255,128,0)))
+}
+#commentform p.form-submit #submit:hover, #build-library-btn:HOVER {
+	background-image: linear-gradient(bottom, rgb(240,120,0) 0%, rgb(255,149,0) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(240,120,0) 0%, rgb(255,149,0) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(240,120,0) 0%, rgb(255,149,0) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(240,120,0) 0%, rgb(255,149,0) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(240,120,0) 0%, rgb(255,149,0) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(240,120,0)), color-stop(1, rgb(255,149,0)))
+}
+.btn:active, .btn:focus, #commentform p.form-submit #submit:active, #commentform p.form-submit #submit:focus, #build-library-btn:focus, #build-library-btn:active {
+	background-image:none;
+	-moz-box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-webkit-box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	-o-box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70;
+	box-shadow:inset 0 -2px 0 #9c4e00, inset 0 1px 0 #ffcb70
+}
+.field {
+	border:3px solid #DEE6E6;
+	box-shadow:0 3px 0 #F5F5F5 inset;
+	-moz-box-shadow:0 3px 0 #F5F5F5 inset;
+	-webkit-box-shadow:0 3px 0 #F5F5F5 inset;
+	-o-box-shadow:0 3px 0 #F5F5F5 inset;
+	color: #999;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+}
+/* ****************  Inner pages  ****************  */
+.inner-wrapper {
+	padding:40px 0
+}
+#inner {
+	overflow:hidden;
+	padding-top:30px
+}
+#inner .left-div {
+	float:left;
+	width:490px;
+	padding-right:20px;
+	border-right:1px dashed #f2e3c0
+}
+#inner .left-div h2 {
+	font: italic 24px Georgia, "Times New Roman", Times, serif;
+	padding: 10px 0;
+}
+.for_developers .left-div h2 {
+	background: url(../popcornWP/images/for_developers_.png) 0 0 no-repeat
+}
+.for_makers .left-div h2 {
+	background: url(../popcornWP/images/for_makers_.png) 0 0 no-repeat
+}
+.for_professionals .left-div h2 {
+	background: url(../popcornWP/images/for_professionals_.png) 0 0 no-repeat
+}
+#inner .left-div p {
+	padding:15px 0;
+}
+.play-btn {
+	width:112px;
+	height:52px;
+	-moz-border-radius:70px;
+	-webkit-border-radius:70px;
+	-o-border-radius:30px;
+	border-radius:70px;
+	display:block;
+	background-color:#f47a00;
+	text-align:center;
+	border:4px solid #ddd9c9;
+	font: normal 30px/30px bebas, Helvetica, Arial, sans-serif;
+	color:#fff;
+	padding:30px 0;
+	-moz-text-shadow: 0 -1px 0 #825c36;
+	-webkit-text-shadow: 0 -1px 0 #825c36;
+	-o-text-shadow: 0 -1px 0 #825c36;
+	text-shadow: 0 -1px 0 #825c36;
+	margin:20px 0
+}
+.play-btn:hover, .play-btn:active, .play-btn:focus {
+	color:#fff;
+}
+#inner .right-div {
+	float:right;
+	width:420px
+}
+#inner .build-popcorn {
+	width:400px;
+	background:#fff;
+	border:2px solid #d7d1b9;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+	padding:8px
+}
+#inner .build-popcorn .downloadDiv {
+	display:block;
+	width:320px;
+	overflow:hidden;
+	background-color:#ebf0f3;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px;
+	padding:30px 40px
+}
+#inner .build-popcorn h1 {
+	font-size:34px;
+	padding-bottom:20px;
+	text-align:center
+}
+.build-popcorn .b-p-left {
+	float:left;
+	width:135px
+}
+.b-p-left br {
+	display: none;
+}
+.build-popcorn .b-p-left ul {
+	border-bottom:1px solid #ccc;
+	padding-bottom:10px;
+	margin-bottom:10px
+}
+.build-popcorn .b-p-left ul.last {
+	border:0
+}
+.build-popcorn .b-p-left ul li {
+	height:28px;
+	line-height:28px
+}
+.build-popcorn .b-p-left ul li label {
+	cursor: pointer;
+}
+.build-popcorn .b-p-left ul li input {
+	margin-right:10px
+}
+.build-popcorn .b-p-right {
+	width:322px;
+	float:right
+}
+.build-popcorn .b-p-textarea {
+	width:320px;
+	height:140px;
+	padding:10px
+}
+.build-popcorn .b-p-submit-btn {
+	float:right;
+	height:38px;
+	margin-top:20px;
+	padding: 0 0 3px 0;
+	width:100px
+}
+.questions {
+	margin:60px 0 0;
+	width:420px;
+	height:215px;
+	background:url(../popcornWP/images/questions_bg.jpg) repeat;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px
+}
+.questions .question-div {
+	float:left;
+	width:150px;
+	text-align:center;
+	padding:0 26px;
+	margin:30px 0;
+	border-left:1px solid #ccc
+}
+.questions .question-div h2 {
+	font: normal 28px/26px Colaborate-Regular, Arial, Helvetica, sans-serif;
+	letter-spacing:-2px
+}
+.questions .question-div a {
+	display:block;
+	margin-top:10px
+}
+.find-out-more {
+	font:italic 14px Georgia, "Times New Roman", Times, serif
+}
+.find-out-more {
+	display:block;
+	margin-bottom:24px
+}
+.video-div {
+	width:280px;
+	height:160px;
+	border:2px solid #d5ceb2;
+	padding:4px;
+	background-color:#fff;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	-o-border-radius:8px;
+	border-radius:8px;
+	float:right;
+	margin-left:20px;
+	margin-bottom: 15px;
+}
+.video-div .video {
+	position:relative;
+	overflow:hidden;
+	width:280px;
+	height:160px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-o-border-radius:4px;
+	border-radius:4px
+}
+.launch-app {
+	width:228px;
+	height:67px;
+	padding: 0 25px 3px;
+	margin:50px 0 20px 80px;
+	display:block;
+	-moz-border-radius: 16px;
+	-webkit-border-radius: 16px;
+	-o-border-radius: 16px;
+	border-radius: 16px;
+	float:left;
+	font: normal 30px/67px Colaborate-Regular, Arial, Helvetica, sans-serif;
+	text-align:center;
+	background-image: linear-gradient(bottom, rgb(125,174,27) 0%, rgb(150,209,32) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(125,174,27) 0%, rgb(150,209,32) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(125,174,27) 0%, rgb(150,209,32) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(125,174,27) 0%, rgb(150,209,32) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(125,174,27) 0%, rgb(150,209,32) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(125,174,27)), color-stop(1, rgb(150,209,32)));
+	-moz-box-shadow:inset 0 -3px 0 #577912, inset 0 1px 0 #d4ec82;
+	-webkit-box-shadow:inset 0 -3px 0 #577912, inset 0 1px 0 #d4ec82;
+	-o-box-shadow:inset 0 -3px 0 #577912, inset 0 1px 0 #d4ec82;
+	box-shadow:inset 0 -3px 0 #577912, inset 0 1px 0 #d4ec82;
+	-moz-text-shadow: 0 1px 0 #658e15;
+	-webkit-text-shadow: 0 1px 0 #658e15;
+	-o-text-shadow: 0 1px 0 #658e15;
+	text-shadow: 0 1px 0 #658e15;
+}
+.launch-app:hover {
+	background-image: linear-gradient(bottom, rgb(137,170,17) 0%, rgb(178,217,23) 100%);
+	background-image: -o-linear-gradient(bottom, rgb(137,170,17) 0%, rgb(178,217,23) 100%);
+	background-image: -moz-linear-gradient(bottom, rgb(137,170,17) 0%, rgb(178,217,23) 100%);
+	background-image: -webkit-linear-gradient(bottom, rgb(137,170,17) 0%, rgb(178,217,23) 100%);
+	background-image: -ms-linear-gradient(bottom, rgb(137,170,17) 0%, rgb(178,217,23) 100%);
+	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(137,170,17)), color-stop(1, rgb(178,217,23)));
+	color:#fff
+}
+.launch-app:active, .launch-app:focus {
+	background-image:none;
+	background-color:#87bd1d !important;
+	color:#fff;
+	-moz-box-shadow:inset 0 -2px 0 #577912, inset 0 1px 0 #d4ec82;
+	-webkit-box-shadow:inset 0 -2px 0 #577912, inset 0 1px 0 #d4ec82;
+	-o-box-shadow:inset 0 -2px 0 #577912, inset 0 1px 0 #d4ec82;
+	box-shadow:inset 0 -2px 0 #577912, inset 0 1px 0 #d4ec82;
+}
+.inner-wrapper h1.main-title {
+	padding-bottom:40px;
+	padding-left:0;
+	line-height:70px
+}
+.page-id-7 .inner-wrapper h1.main-title, .page-id-9 .inner-wrapper h1.main-title, .page-id-11 .inner-wrapper h1.main-title {
+	padding-bottom:25px;
+	padding-left:120px;
+	line-height:88px
+}
+.page-id-7 h1.main-title {
+	background: url(../popcornWP/images/for_developers.png) 0 0 no-repeat
+}
+.page-id-9 h1.main-title {
+	background: url(../popcornWP/images/for_makers.png) 0 0 no-repeat
+}
+.page-id-11 h1.main-title {
+	background: url(../popcornWP/images/for_professionals.png) 0 0 no-repeat
+}
+.archive h1.main-title {
+	font-size: 40px;
+	letter-spacing: -3px;
+	line-height: 40px
+}
+.archive h1.main-title span {
+	font-size: 30px;
+	letter-spacing: 0;
+	line-height: 35px
+}
+/**---- BLOG ---- **/
+#primary {
+	float:left;
+	width:660px
+}
+.blog h1.main-title {
+	padding-left:0
+}
+#primary article {
+	border-top: 3px solid #444444;
+	padding: 10px 0 40px;
+	overflow:hidden
+}
+#primary .entry-title a, #primary .entry-title {
+	font:italic 24px/24px Georgia, "Times New Roman", Times, serif;
+	color:#444 !important;
+	padding-bottom:10px;
+	display:block;
+	letter-spacing:0
+}
+#primary .entry-meta {
+	border-bottom:1px solid #333;
+	padding:0 0 8px
+}
+#primary footer.entry-meta {
+	border:0;
+	float:right
+}
+#primary .by-author {
+	float:right
+}
+#primary .by-author .sep {
+	float:left
+}
+#primary .by-author .author {
+	float:right;
+	margin-left:7px
+}
+#primary .cat-links {
+	margin-left:10px
+}
+#primary .hentry a {
+	font-style:italic
+}
+#primary .hentry .datetime {
+	color:#444;
+	font-style:normal
+}
+#primary .entry-content {
+	padding:20px 0
+}
+#primary .entry-content p {
+	padding:15px 0;
+}
+#primary .entry-content p.addoverflw {
+	overflow: hidden;
+}
+#secondary {
+	float:right;
+	width:220px
+}
+#secondary .widget-title {
+	font: italic 20px/20px Georgia, "Times New Roman", Times, serif;
+	color:#444;
+	padding-bottom:16px
+}
+#secondary .widget li a {
+	line-height:24px;
+	font-style:italic
+}
+#secondary .widget {
+	padding-bottom:40px;
+	overflow:hidden
+}
+.single-post #inner {
+	position:relative;
+	padding-top:179px
+}
+.single-post h1.main-title {
+	position: absolute;
+	top:30px;
+	left:0
+}
+.single-post #primary #nav-single {
+	position:absolute;
+	z-index:999;
+	left:609px;
+	top:140px
+}
+.single-post #primary #nav-single h3 {
+	display:none
+}
+.single-post .entry-content h1 {
+	font-size: 30px;
+	letter-spacing: -1px;
+}
+#respond h3 {
+	font-size:20px;
+	font-style:italic
+}
+#respond #commentform {
+	padding:20px 0;
+	position:relative
+}
+#commentform p {
+	position:relative;
+	width:310px;
+	margin-bottom:14px
+}
+#commentform p label {
+	position:absolute;
+	z-index:999;
+	left:14px;
+	line-height:38px;
+	color:#999
+}
+#commentform p input, #commentform p textarea {
+	padding:0 10px;
+	height:32px;
+	line-height:16px;
+	font-style:italic;
+	color:#999;
+	width:286px;
+	font-size:13px
+}
+#commentform .comment-notes, #commentform p span, #commentform p.form-allowed-tags {
+	display:none
+}
+#commentform p.comment-form-comment, #commentform p.form-submit {
+	position: absolute;
+	z-index:999;
+	right:0;
+}
+#commentform p.comment-form-comment {
+	top:20px;
+	height:70px
+}
+#commentform p textarea {
+	height:64px;
+	padding:10px
+}
+#commentform p.form-submit {
+	top:124px;
+}
+#commentform p.form-submit #submit {
+	width:auto;
+	float:right;
+	padding: 0 20px 3px;
+	height:38px
+}
+#comments-title {
+	font-size: 18px;
+	padding-bottom: 12px
+}
+#comments-title span {
+	font-style: italic
+}
+.comment-author {
+	position:relative;
+	overflow: hidden
+}
+.avatar {
+	border: 2px solid #fff;
+	float: left;
+	margin: 0 20px 20px 0;
+	-moz-box-shadow: 1px 1px 2px #999;
+	-webkit-box-shadow: 1px 1px 2px #999;
+	-o-box-shadow: 1px 1px 2px #999;
+	box-shadow: 1px 1px 2px #999;
+}
+.fn {
+	display: block;
+	font-size: 15px;
+	font-weight: bold
+}
+.comment-content {
+	padding:12px 0
+}
+.comment-content p {
+	padding-bottom:10px;
+	display:block
+}
+#primary #comments article {
+	border-top: 2px solid #999;
+	padding:20px 0
+}
+.reply {
+	float:right;
+	font-style:italic
+}
+.commentlist li ul {
+	padding-left:50px
+}
+.commentlist ul ul {
+	padding-left:100px
+}
+.commentlist li li article {
+	border-top: 2px solid #ccc !important;
+}
+#respond {
+	border-top:3px solid #999;
+	padding:20px 0;
+	margin-top:20px;
+	min-height:200px
+}
+/* --- Error page -----*/
+.error404 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	color:#444
+}
+.not-found h1 {
+	font: normal 70px Colaborate-Bold, Arial, Helvetica, sans-serif;
+	letter-spacing:-5px
+}
+.not-found h1 span {
+	font:italic 26px/24px Georgia, "Times New Roman", Times, serif;
+	display:block;
+	letter-spacing:0
+}
+.not-found p {
+	font-style:italic;
+	font-size:16px;
+	padding:20px 0;
+	display:block;
+	width:400px
+}
+.not-found ul li {
+	list-style:disc;
+	margin-left:16px;
+	width:380px;
+	padding-bottom:14px
+}
+.not-found {
+	background:url(../popcornWP/images/404_bg.png) right top no-repeat;
+	min-height:400px
+}
+#slider {
+	overflow: hidden;
+	text-align: left;
+	margin: 0 auto;
+	width: 870px;
+}
+#slider .panel-container {
+	position: relative;
+}
+#slider li {
+	padding: 0 0 40px 0;
+	width:870px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+#slider li .slidein {
+	width: 380px;
+	float: left;
+	margin-left: 20px;
+}
+#slider li a.slider-image-link {
+	width:430px;
+	display: block;
+	float: right;
+	text-align: center;
+	margin-right: 20px;
+}
+#slider li a.slider-image-link img {
+	display: inline;
+	float: none;
+}
+.jcarousel-clip {
+	width:900px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+#slider li img, #slider li video {
+	float: right;
+	display: block;
+}
+#slider li p a {
+	display: block;
+	margin-top: 10px;
+}
+.coda-nav-left a, .coda-nav-right a {
+	background:url(../popcornWP/images/slider-arrows.png) 0 0 no-repeat;
+	display: block;
+	height: 40px;
+	left: 0;
+	position: absolute;
+	top: 100px;
+	width: 40px;
+	cursor:pointer;
+	overflow: hidden;
+	text-indent: -999px;
+}
+.coda-nav-left a:hover {
+	background-position: 0 -60px
+}
+.coda-nav-left a:active, .coda-nav-left a:focus {
+	background-position: 0 -120px
+}
+.coda-nav-right a {
+	left:auto;
+	right:0;
+	background-position: -84px 0
+}
+.coda-nav-right a:hover {
+	background-position: -84px -60px
+}
+.coda-nav-right a:active, .coda-nav-right a:focus {
+	background-position: -84px -120px
+}
+#slider h1.main-title {
+	line-height: 55px;
+}
+.play_btn {
+	display: block;
+	height: 92px;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	width: 92px;
+	cursor: pointer;
+	z-index: 9999;
+	background: url(../popcornWP/images/play_btn.png) no-repeat 0 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	margin: -47px 0 0 -47px;
+}
+.content-box {
+	width:100%;
+	overflow:hidden;
+	padding-bottom:30px;
+	margin-bottom:30px;
+	border-bottom:1px dashed #D7CDB1;
+	min-height: 190px;
+	min-height: 206px;
+}
+.content-box.last {
+	margin:0;
+	border:0
+}
+#inner .entry-content ol {
+	list-style:circle;
+	margin-left:15px
+}
+#inner .entry-content ol li {
+	padding-bottom:10px;
+	font-size: 16px;
+	font-style: italic;
+}
+.page-id-9 .right-div .video-div {
+	width:402px;
+	height:242px;
+	font-size: 0;
+}
+.page-id-9 .right-div .video-div .video {
+	width:400px;
+	height:240px
+}
+.alpha-soft {
+	margin-left: 124px;
+	text-align: center;
+	width: 200px
+}
+.dwnld, #build-library-btn {
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+	height: 43px;
+	line-height: 40px;
+	margin: 0 0 10px 40px;
+	padding: 0 20px;
+	width:200px;
+	text-align: center;
+}
+#build-library-btn {
+	width:auto;
+	float: left;
+	margin: 0;
+}
+#build-library-btn:hover, .dwnld:hover {
+	color: #FFFED1;
+}
+.dwnld:focus, .dwnld:active, #build-library-btn:focus, #build-library-btn:active {
+	color:#ffd2a3
+}
+.build-popcorn .downloadDiv p {
+	padding-bottom:30px;
+	text-align:center;
+	clear:both
+}
+.entry-content p.desc-p {
+	padding: 10px 0;
+	font-size: 16px;
+	font-style: italic;
+}
+footer.entry-meta {
+	clear: both;
+}
+.page-id-11 #inner .left-div, .page-id-11 #inner .right-div {
+	padding: 0;
+	width:460px;
+	border: none;
+}
+p.sub-title {
+	font-size: 20px;
+	font-style: italic;
+	padding-bottom: 30px;
+}
+.home-video-wrapper {
+	height: 290px;
+	position: relative;
+	float: right;
+	margin-right: 20px;
+}
+.meta-nav {
+	font-style: normal;
+}
+.page-id-44 .category-description {
+	float: left;
+	width: 240px;
+}
+.page-id-44 .type-container {
+	width: 100%;
+	clear: both;
+	padding: 10px 0;
+	overflow: hidden;
+}
+.page-id-44 .type-container .category-description input {
+	color:#CC6600;
+	padding: 10px 0;
+	background: none;
+	font-style: italic;
+	font-size: 16px;
+	cursor:pointer;
+	text-indent: -4px;
+}
+.page-id-44 .type-container .category-description input:hover {
+	color: #CC9900;
+}
+.page-id-44 .type-container h3 {
+	font: italic 24px Georgia, "Times New Roman", Times;
+	font-weight: 400;
+	padding-bottom: 5px;
+}
+.page-id-44 .content hr {
+	display: block;
+	clear: both;
+	border: 1px dashed #d7cdb1;
+}
+.page-id-44 .list-item {
+	width:680px;
+	float: right;
+	padding: 10px 0;
+}
+.page-id-44 .list-item input.checkbox {
+	margin-right: 5px;
+	float: left;
+}
+.page-id-44 .description {
+	display: block;
+	float: right;
+	width:520px;
+	color: #444;
+	cursor: help;
+}
+#libsize {
+	padding: 10px 10px 0;
+	float: right;
+	margin-left: 10px;
+}
+span.title-span {
+	float: left;
+	display: block;
+	cursor: default;
+}
+#nav-above {
+	clear: both;
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+#nav-above a {
+	display: block;
+	float: left;
+}
+#link-buttons {
+	background: url("../popcornWP/images/questions_bg.jpg") repeat scroll 0 0 transparent;
+	padding:5px 0px;
+	overflow: hidden;
+	float: right;
+}
+#build-library #progress {
+	padding-bottom: 10px;
+	overflow: hidden;
+	float: left;
+}
+#link-buttons a {
+	display: block;
+	font-size: 16px;
+	padding: 5px 15px;
+	float: left;
+}
+#build-library br {
+	display: none;
+}
+.alignleft {
+	float: left;
+	margin:10px 20px 10px 0;
+}
+.alignright {
+	float: right;
+	margin:10px 0 10px 20px;
+}
+/* .blog #primary .entry-content p{
+clear: both;
+} */
+
+
+.blog #primary .entry-content .wp-caption img {
+	width:100%;
+	height: auto;
+}
+.blog #primary .entry-content .wp-caption .wp-caption-text {
+	font-style: italic;
+	padding: 10px 5px;
+	text-align: center;
+}
+.blog #primary .entry-content ul {
+	list-style: disc;
+}
+.blog #primary .entry-content h1, .blog #primary .entry-content h2, .blog #primary .entry-content h3, .blog #primary .entry-content h4 {
+	font-family: Colaborate-Bold, Helvetica, Arial, sans-serif;
+}
+.blog #primary .entry-content h1 {
+	font-size: 30px;
+}
+.blog #primary .entry-content h2 {
+	font-size: 25px;
+	letter-spacing: -1px;
+	margin: 10px 0;
+}
+.video-div .video p {
+	padding: 0 !important;
+}
+#email-field label {
+	display: none;
+}
+#progress #current {
+	background-color: yellow;
+	border: 0 none;
+	height: 35px;
+	opacity: 0.5;
+	padding: 0;
+	width: 0;
+	margin-top: 4px;
+	margin-left: 10px;
+}
+#progress #current.complete {
+	background-color: green;
+}
+#slider li img {
+	max-width: 430px;
+	max-height: 290px;
+}
+/* Pagination */
+
+.pagination a, .pagination span {
+	float: left;
+	display:block;
+	padding: 2px 7px;
+	-moz-border-radius:20px;
+	-webkit-border-radius:20px;
+	border-radius:20px;
+	-o-border-radius:20px;
+	height: 19px;
+}
+.pagination span {
+	background: #333;
+	color: #FFF;
+	padding: 2px 9px;
+}
+.prev-next, .pagination {
+	float: right;
+}
+.pagination {
+	padding-right: 15px;
+}
+.nav-previous, .nav-next, .nav-previous a, .nav-next a {
+	float: left;
+	width:24px;
+	height: 24px;
+	background: url(../popcornWP/images/pg_arrow.png) no-repeat -2px -58px;
+	overflow: hidden;
+	display: block;
+}
+.nav-previous {
+	background-position: -31px -58px;
+	margin-left: 3px;
+	float: right;
+}
+.nav-next a {
+	background-position: -2px -2px;
+}
+.nav-next a:hover {
+	background-position: -2px -30px;
+}
+.nav-previous a {
+	background-position: -31px -2px;
+}
+.nav-previous a:hover {
+	background-position: -31px -30px;
+}
+.pagination a {
+	display: none;
+}
+.pagination .inactive, .pagination span.current {
+	display: block;
+}
+.nav-previous a, .nav-next a {
+	text-indent: -9999px;
+}
+.blog #nav-below {
+	padding-top: 15px;
+	border-top: 1px solid #333;
+}
+#archives li {
+	width:165px;
+}
+.company-logo {
+	bottom: 73px;
+	position: absolute;
+	right: 0;
+	z-index: 9999999;
+	display:block;
+	width:142px;
+	height:16px
+}
+/* instapoppin!
+*/
+
+#popcornjshighlight.active, #popcornmakerhighlight.active, #learnpopcornhighlight.active {
+	background-color: rgba(225,218,194,1);
+}
+#popcornjshighlight, #popcornmakerhighlight, #learnpopcornhighlight {
+	background-color: rgba(225,218,194,0);
+	-moz-transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	border-radius: 65px;
+}
+#pophere a {
+	font-size: 30px;
+	color: black;
+}
+#tabzilla {
+	margin-top: -3px;
+}
