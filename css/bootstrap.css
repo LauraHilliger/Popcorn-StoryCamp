@@ -851,8 +851,6 @@ input[type="submit"].btn.btn-mini {
 }
 .thumbnails > li {
   float: left;
-  margin-bottom: 18px;
-  margin-left: 20px;
 }
 .thumbnail {
   display: block;
@@ -865,10 +863,6 @@ input[type="submit"].btn.btn-mini {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-
-.ch-projects div.thumbnail{
-width:186px;	
 }
 
 a.thumbnail:hover {
@@ -1788,7 +1782,6 @@ button.close {
     margin-left: -30px;
   }
   .thumbnails > li {
-    margin-left: 30px;
   }
   .row-fluid .thumbnails {
     margin-left: 0;
