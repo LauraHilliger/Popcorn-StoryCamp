@@ -434,7 +434,15 @@ margin-bottom:0px;
 
 .modal-body ul li{
 	list-style:circle;	
-	margin-bottom:5px;
+	margin-bottom:10px;
+}
+
+.modal-body ol li{
+	margin-bottom: 10px;
+}
+
+.modal-body ol li strong{
+	margin-right:10px;
 }
 
 .SC_nav p, .resources p, .SC_cinema_right p{
